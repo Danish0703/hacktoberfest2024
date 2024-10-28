@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML L3</title>
+</head>
+<body>
+    <h3><i><b>Registration form</b></i></h3>
+    <form action="/action" method="post"> <!-- Added method attribute -->
+        <div>
+            <label for="Fname">Please enter your name</label> <!-- Corrected for attribute -->
+            <input type="text" id="Fname" placeholder="First Name" name="Fname"/>
+            <input type="text" id="Lname" placeholder="Last Name" name="Lname"/> <!-- Added id attribute -->
+        </div>
+        <div>
+            <label for="gender">Please select gender</label>
+            <select name="gender" id="gender">
+                <option value="m">male</option>
+                <option value="f">female</option>
+                <option value="o">others</option>
+            </select>
+        </div>
+        <div>
+            Do you agree to all terms of service?
+            <input type="checkbox" id="tos_agree" name="tos_agree"/>
+            <label for="tos_agree">Yes, I Agree</label> <!-- Corrected for attribute -->
+        </div>
+        <button type="submit">Register</button>
+    </form> <!-- Moved closing form tag here -->
+</body>
+</html>
